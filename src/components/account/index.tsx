@@ -1,7 +1,7 @@
 import { generatePrivateKey, privateKeyToAccount } from 'viem/accounts'
 import { useState } from 'react'
-import { createPublicClient, createWalletClient, custom, formatEther, fromHex, Hex, http, parseEther, toHex } from 'viem'
-import { mainnet, sepolia } from 'viem/chains'
+import { createPublicClient, createWalletClient, custom, formatEther, Hex, http, parseEther } from 'viem'
+import { sepolia } from 'viem/chains'
 import {Button} from "antd"
 declare global {
     interface Window {
