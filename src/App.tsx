@@ -1,8 +1,10 @@
-import Account from "./components/account"
+// import Account from "./components/account"
+import { Modal } from "./components/modal"
 function App() {
   return (
     <>
-    <Account/>
+    <Modal/>
+    {/* <Account/> */}
     {/* <BrowserRouter>
     <Route path="/" element= {<Home/>}/>
     <Route path="/wallet" element= {<Wallet/>}/>
