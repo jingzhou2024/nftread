@@ -2,7 +2,7 @@ import { generatePrivateKey, privateKeyToAccount } from 'viem/accounts'
 import { useState } from 'react'
 import { createPublicClient, createWalletClient, custom, formatEther, fromHex, Hex, http, parseEther, toHex } from 'viem'
 import { mainnet, sepolia } from 'viem/chains'
-
+import {Button} from "antd"
 declare global {
     interface Window {
         ethereum: { request(...args: any): Promise<any> };
@@ -115,6 +115,7 @@ const Account = () => {
                 <p>txhash {txhash}</p>
                 <button onClick={handleTransfer}>转账</button>
             </div>
+            <Button>我靠</Button>
         </>
     )
 }
